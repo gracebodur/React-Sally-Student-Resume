@@ -1,0 +1,49 @@
+*   {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    width: 100vw;
+    background-color: cadetblue;
+}
+
+.nav-top {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+   justify-content: space-around;
+}
+
+.info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contact-info {
+ flex-basis: 1;
+}
+
+.education {
+ flex-basis: 1;
+}
+
+.employment {
+  flex-basis: 1;
+}

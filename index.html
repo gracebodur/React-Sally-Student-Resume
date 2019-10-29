@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id ='application-root'></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type='text/babel'>
+      function App(props) {
+        const name = `Sally Student`;
+        const imageSource = `https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg`;
+        const imageAlt = `A picture of a successfull woman`;
+        const emailAddress = `mailto:sallystud@kickresume`;
+        const telNumber = `tel:+1999-999-999`;
+        return (
+            <main className ='container'>
+                <section className ='navigation'>
+                    <nav className='navigatiion'>
+                        <ul className='nav-top'>
+                            <li><a href={'#home'}>Home</a></li>
+                            <li><a href={'#contact'}>Contact Information</a></li>
+                            <li><a href={'#education'}>Education</a></li>
+                            <li><a href={'#employment'}>Employment History</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <h1>Fullstack Web Developer Expert</h1>
+
+                <section className='sally-image'>
+                    <img src={imageSource} height={'300'} width={'200'} alt={imageAlt}/>
+                </section>
+                <div className='info-container'>
+                <section className='contact-info'>
+                    <h2 className='contact-info'>Contact Information</h2>
+                    <address>
+                        <nav className='nav-contact'>
+                            <ul className='nav-contact'>   
+                                <li>{name}</li>
+                                <li><a href={emailAddress}>sallystud@kickresume</a></li>
+                                <li><a href= {telNumber}>+1(999) 999-999</a></li>
+                            </ul>
+                        </nav>
+                    </address>
+                </section>
+                <section className="education">
+                    <h2 className="education">Education</h2>
+                        <ul className='education-list'>
+                            <li>Computer Engineering</li>
+                                <p>College of Engineering and Computer Science,
+                                Berlin, Germany 09/2006-05/2011</p>
+                            <li>Full Stack Flex Bootcamp</li>
+                                <p>Raleigh, North Carolina, USA 08/2011-03/2012</p>
+                        </ul>
+                </section>
+                <section className='employment'>
+                    <h2>Employment History</h2>
+                    <ul className='employment-list'>
+                        <li>Company Name: IBM</li>
+                        <li>Address: Raleigh, North Carolina</li>
+                        <li>Job Title: Senior Full Stack Web Developer</li>
+                        <li>Dates of Employment: 10/2014-up to present</li>
+                        <li>Job Description</li>
+                    </ul>
+                    <blockquote lang='la'>
+                    <p>Lorem ipsum dolor sit amet, in explicari intellegebat nec. Vix abhorreant dissentiet interpretaris ad, magna simul ocurreret vel te, ut nam minim definitiones. Nemore disputationi his at. Vix ea postulant eloquentiam, mutat ignota aliquam ea vel, ad illud laudem temporibus duo. Ius ea commune persecuti, etiam solet accusam cu quo, recusabo recteque in vel.</p>
+                    </blockquote>
+                    <ul className='employment-list'>
+                        <li>Company Name: CISCO</li>
+                        <li>Address: Berlin, Germany</li>
+                        <li>Job Title: Junior Full Stack Web Developer</li>
+                        <li>Dates of Employment: 5/2012-8/2014</li>
+                        <li>Job Description</li>
+                    </ul> 
+                    <blockquote lang='la'>
+                    <p>Lorem ipsum dolor sit amet, in explicari intellegebat nec. Vix abhorreant dissentiet interpretaris ad, magna simul ocurreret vel te, ut nam minim definitiones. Nemore disputationi his at. Vix ea postulant eloquentiam, mutat ignota aliquam ea vel, ad illud laudem temporibus duo. Ius ea commune persecuti, etiam solet accusam cu quo, recusabo recteque in vel.</p>
+                    </blockquote>
+                </section>
+                </div>
+            </main>
+        );
+      }
+
+        ReactDOM.render(
+            <App />,
+            document.querySelector('#application-root')
+        );    
+    </script>
+</body>
+</html>
